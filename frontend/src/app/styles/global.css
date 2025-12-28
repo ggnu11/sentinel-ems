@@ -1,6 +1,7 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
 
 @import 'tailwindcss';
+@import '@progress/kendo-theme-default/dist/all.css';
 
 @theme {
   --font-pretendard: 'Pretendard Variable', sans-serif;
