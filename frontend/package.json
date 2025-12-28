@@ -11,7 +11,12 @@
   },
   "dependencies": {
     "@progress/kendo-react-buttons": "^13.2.0",
+    "@progress/kendo-react-charts": "^13.2.0",
     "@progress/kendo-react-grid": "^13.2.0",
+    "@progress/kendo-react-indicators": "^13.2.0",
+    "@progress/kendo-react-inputs": "^13.2.0",
+    "@progress/kendo-react-layout": "^13.2.0",
+    "@progress/kendo-svg-icons": "^4.5.0",
     "@progress/kendo-theme-default": "^12.3.0",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-query": "^5.90.12",

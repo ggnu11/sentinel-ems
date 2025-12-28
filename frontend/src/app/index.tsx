@@ -2,12 +2,12 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles/global.css';
 import { Providers } from './providers';
-import { HomePage } from '@/pages/home';
+import { MenuRoutes } from './router';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Providers>
-      <HomePage />
+      <MenuRoutes />
     </Providers>
   </StrictMode>
 );
