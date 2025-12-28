@@ -5,9 +5,9 @@ import { AuthRedirect } from './AuthRedirect';
 import { NewLayout } from '../layout';
 import { LoginPage } from '@/pages/login';
 import { DashboardPage } from '@/pages/dashboard';
-import { PerformancePage } from '@/pages/performance';
-import { ProductsPage } from '@/pages/products';
-import { SettingsPage } from '@/pages/settings';
+import { MonitoringPage } from '@/pages/monitoring';
+import { StatisticsPage } from '@/pages/statistics';
+import { ConfigPage } from '@/pages/config';
 
 export const routes: RouteObject2[] = [
   {
@@ -51,29 +51,29 @@ export const routes: RouteObject2[] = [
         ),
       },
       {
-        path: '/performance',
-        text: 'Performance & Sales',
+        path: '/monitoring',
+        text: 'Monitoring',
         element: (
           <AuthRedirect>
-            <PerformancePage />
+            <MonitoringPage />
           </AuthRedirect>
         ),
       },
       {
-        path: '/products',
-        text: 'Products',
+        path: '/statistics',
+        text: 'Statistics',
         element: (
           <AuthRedirect>
-            <ProductsPage />
+            <StatisticsPage />
           </AuthRedirect>
         ),
       },
       {
-        path: '/settings',
-        text: 'Settings',
+        path: '/config',
+        text: 'Config',
         element: (
           <AuthRedirect>
-            <SettingsPage />
+            <ConfigPage />
           </AuthRedirect>
         ),
       },

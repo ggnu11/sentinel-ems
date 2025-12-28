@@ -9,9 +9,9 @@ export interface MenuItem {
 // 목업 메뉴 데이터
 const mockMenuData: MenuItem[] = [
   { path: '/main', text: 'Dashboard' },
-  { path: '/performance', text: 'Performance & Sales' },
-  { path: '/products', text: 'Products' },
-  { path: '/settings', text: 'Settings' },
+  { path: '/monitoring', text: 'Monitoring' },
+  { path: '/statistics', text: 'Statistics' },
+  { path: '/config', text: 'Config' },
 ];
 
 // 목업 API 호출 시뮬레이션
@@ -29,4 +29,3 @@ export function useGetMenu() {
     gcTime: 10 * 60 * 1000, // 10분 (이전 cacheTime)
   });
 }
-

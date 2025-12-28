@@ -21,20 +21,33 @@ export default {
       title: '대시보드',
       button: '버튼',
     },
-    performance: {
-      title: '성능 및 판매',
+    monitoring: {
+      title: '모니터링',
     },
-    products: {
-      title: '제품',
+    statistics: {
+      title: '통계',
+      searchConditions: '조회 조건',
+      results: '결과',
+      startDate: '시작일',
+      endDate: '종료일',
+      category: '카테고리',
+      search: '조회',
     },
-    settings: {
+    config: {
       title: '설정',
+      thresholdSettings: '임계치 설정',
+      thresholdConfiguration: '임계치 구성',
+      current: '현재',
+      threshold: '임계치',
+      edit: '편집',
+      save: '저장',
+      cancel: '취소',
     },
     menu: {
       dashboard: '대시보드',
-      performance: '성능 및 판매',
-      products: '제품',
-      settings: '설정',
+      monitoring: '모니터링',
+      statistics: '통계',
+      config: '설정',
     },
   },
 };

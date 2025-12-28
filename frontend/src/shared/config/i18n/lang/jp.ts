@@ -21,21 +21,33 @@ export default {
       title: 'ダッシュボード',
       button: 'ボタン',
     },
-    performance: {
-      title: 'パフォーマンスと売上',
+    monitoring: {
+      title: 'モニタリング',
     },
-    products: {
-      title: '製品',
+    statistics: {
+      title: '統計',
+      searchConditions: '検索条件',
+      results: '結果',
+      startDate: '開始日',
+      endDate: '終了日',
+      category: 'カテゴリ',
+      search: '検索',
     },
-    settings: {
+    config: {
       title: '設定',
+      thresholdSettings: '閾値設定',
+      thresholdConfiguration: '閾値構成',
+      current: '現在',
+      threshold: '閾値',
+      edit: '編集',
+      save: '保存',
+      cancel: 'キャンセル',
     },
     menu: {
       dashboard: 'ダッシュボード',
-      performance: 'パフォーマンスと売上',
-      products: '製品',
-      settings: '設定',
+      monitoring: 'モニタリング',
+      statistics: '統計',
+      config: '設定',
     },
   },
 };
-

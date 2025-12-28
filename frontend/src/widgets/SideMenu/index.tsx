@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Drawer, DrawerContent } from '@progress/kendo-react-layout';
 import type { DrawerSelectEvent } from '@progress/kendo-react-layout';
-import { inboxIcon, calendarIcon, heartIcon, linkIcon } from '@progress/kendo-svg-icons';
+import { inboxIcon, eyeIcon, cartIcon, gearIcon } from '@progress/kendo-svg-icons';
 
 interface SideMenuProps {
   expanded: boolean;
@@ -20,9 +20,9 @@ type MenuItemConfig = {
 
 const menuItemsConfig: MenuItemConfig[] = [
   { translationKey: 'menu.dashboard', svgIcon: inboxIcon, route: '/main' },
-  { translationKey: 'menu.performance', svgIcon: calendarIcon, route: '/performance' },
-  { translationKey: 'menu.products', svgIcon: linkIcon, route: '/products' },
-  { translationKey: 'menu.settings', svgIcon: heartIcon, route: '/settings' },
+  { translationKey: 'menu.monitoring', svgIcon: eyeIcon, route: '/monitoring' },
+  { translationKey: 'menu.statistics', svgIcon: cartIcon, route: '/statistics' },
+  { translationKey: 'menu.config', svgIcon: gearIcon, route: '/config' },
 ];
 
 export function SideMenu({ expanded, children }: SideMenuProps) {

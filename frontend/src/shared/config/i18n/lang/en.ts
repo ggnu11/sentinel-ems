@@ -21,20 +21,33 @@ export default {
       title: 'Dashboard',
       button: 'Button',
     },
-    performance: {
-      title: 'Performance & Sales',
+    monitoring: {
+      title: 'Monitoring',
     },
-    products: {
-      title: 'Products',
+    statistics: {
+      title: 'Statistics',
+      searchConditions: 'Search Conditions',
+      results: 'Results',
+      startDate: 'Start Date',
+      endDate: 'End Date',
+      category: 'Category',
+      search: 'Search',
     },
-    settings: {
-      title: 'Settings',
+    config: {
+      title: 'Configuration',
+      thresholdSettings: 'Threshold Settings',
+      thresholdConfiguration: 'Threshold Configuration',
+      current: 'Current',
+      threshold: 'Threshold',
+      edit: 'Edit',
+      save: 'Save',
+      cancel: 'Cancel',
     },
     menu: {
       dashboard: 'Dashboard',
-      performance: 'Performance & Sales',
-      products: 'Products',
-      settings: 'Settings',
+      monitoring: 'Monitoring',
+      statistics: 'Statistics',
+      config: 'Config',
     },
   },
 };

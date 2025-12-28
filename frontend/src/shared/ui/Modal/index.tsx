@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import { Button } from '../Button';
 
 interface ModalProps {
   isOpen: boolean;
@@ -21,14 +20,8 @@ export function Modal({ isOpen, onClose, title, children, footer, size = 'md' }:
   if (!isOpen) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
-      onClick={onClose}
-    >
-      <div
-        className={`w-full ${sizeStyles[size]} rounded-lg bg-white shadow-xl`}
-        onClick={(e) => e.stopPropagation()}
-      >
+    <div className="bg-opacity-50 fixed inset-0 z-50 flex items-center justify-center bg-black p-4" onClick={onClose}>
+      <div className={`w-full ${sizeStyles[size]} rounded-lg bg-white shadow-xl`} onClick={(e) => e.stopPropagation()}>
         {/* Header */}
         {title && (
           <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4">
@@ -39,12 +32,7 @@ export function Modal({ isOpen, onClose, title, children, footer, size = 'md' }:
               aria-label="Close"
             >
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
@@ -55,12 +43,9 @@ export function Modal({ isOpen, onClose, title, children, footer, size = 'md' }:
 
         {/* Footer */}
         {footer && (
-          <div className="flex items-center justify-end gap-3 border-t border-gray-200 px-6 py-4">
-            {footer}
-          </div>
+          <div className="flex items-center justify-end gap-3 border-t border-gray-200 px-6 py-4">{footer}</div>
         )}
       </div>
     </div>
   );
 }
-
